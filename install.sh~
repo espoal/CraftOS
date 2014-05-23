@@ -1,18 +1,20 @@
 #!/bin/bash
 
+touch /usr/games/minecraft/installed
 
-chmod +x /usr/games/minecraft/server.py /usr/games/minecraft/mineos_console.py /usr/games/minecraft/generate-sslcert.sh
 
-ln -s /usr/games/minecraft/mineos_console.py /usr/local/bin/craftos
+# chmod +x /usr/games/minecraft/server.py /usr/games/minecraft/mineos_console.py /usr/games/minecraft/generate-sslcert.sh
 
-cp /usr/games/minecraft/init/craftos /etc/init.d/
+# ln -s /usr/games/minecraft/mineos_console.py /usr/local/bin/craftos# 
 
-chmod 744 /etc/init.d/craftos
+# cp /usr/games/minecraft/init/craftos /etc/init.d/
 
-update-rc.d craftos defaults
+# chmod 744 /etc/init.d/craftos
 
-cp /usr/games/minecraft/craftos.conf /etc/
+# update-rc.d craftos defaults
 
-   - shell: /usr/games/minecraft/generate-sslcert.sh
+# cp /usr/games/minecraft/craftos.conf /etc/
 
-   - shell: service mineos start
+# /usr/games/minecraft/generate-sslcert.sh
+
+
